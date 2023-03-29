@@ -10,7 +10,7 @@ let titleElement = document.getElementById('title-text');
 
 fetch(`${quoteApi}${params.maxLength ? `?maxLength=${params.maxLength}`: ''}`)
   .then(res => res.json())
-  .then(json => titleElement.innerHTML = `<strong>"</strong>${json.content}<strong>"</strong> —${json.author}`)
+  .then(json => titleElement.innerHTML = `<strong>"</strong><em>${json.content}</em><strong>"</strong> —${json.author}`)
 
 titleElement.className = params.font ? `font-${params.font}` : 'font-default';
 titleElement.style.fontSize = params.size ? `${params.size}px` : '32px';
