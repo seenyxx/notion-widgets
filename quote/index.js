@@ -8,7 +8,7 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
 
 let titleElement = document.getElementById('title-text');
 
-fetch(quoteApi)
+fetch(`${quoteApi}${params.maxLength ? `?maxLength=${params.maxLength}`: ''}`)
   .then(res => res.json())
   .then(json => titleElement.innerHTML = `<strong>"</strong>${json.content}<strong>"</strong> —${json.author}`)
 
