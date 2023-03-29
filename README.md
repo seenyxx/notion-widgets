@@ -1,6 +1,7 @@
 # Notion Widgets
 ### Title Widget
-Url: /notion-widgets/title-widget
+**Url:** `/notion-widgets/title-widget`
+
 Parameters:
 - `?text` Text to be displayed
 - `?size` Size of the text in pixels
