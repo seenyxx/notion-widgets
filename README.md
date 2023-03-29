@@ -1,6 +1,6 @@
 # Notion Widgets
 ### Title Widget
-**Url:** `/notion-widgets/title-widget`
+**Url:** `/notion-widgets/title-widget//<parameters>`
 
 Parameters:
 - `?text` Text to be displayed
