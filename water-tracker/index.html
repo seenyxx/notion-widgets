@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,400;0,700;1,400&family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="barContainer">
+    <div id="bar"></div>
+  </div>
+  <p id="statsDisplay"><em><label id="capacityDisplay">0mL/2000mL</label></em><br><strong id="larger"><label for="" id="percentage">0%</label></strong></p>
+  <div id="btnContainer">
+    <button class="addButtons" onclick="addWater(250)">Cup 250mL</button>
+    <br>
+    <button class="addButtons" onclick="addWater(350)">Mug 350mL</button>
+    <br>
+    <button class="addButtons" onclick="addWater(1000)">Bottle 1L</button>
+  </div>
+</body>
+<script src="index.js"></script>
+</html>
