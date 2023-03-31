@@ -11,16 +11,20 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <div id="barContainer">
-    <div id="bar"></div>
-  </div>
-  <p id="statsDisplay"><em><label id="capacityDisplay">0mL/2000mL</label></em><br><strong id="larger"><label for="" id="percentage">0%</label></strong></p>
-  <div id="btnContainer">
-    <button class="addButtons" onclick="addWater(250)">Cup 250mL</button>
-    <br>
-    <button class="addButtons" onclick="addWater(350)">Mug 350mL</button>
-    <br>
-    <button class="addButtons" onclick="addWater(1000)">Bottle 1L</button>
+  <div id="uiContainer">
+    <div id="barContainer">
+      <div id="bar"></div>
+    </div>
+    <p id="statsDisplay"><em><label id="capacityDisplay">0mL/2000mL</label></em><br><strong id="larger"><label for="" id="percentage">0%</label></strong></p>
+    <div id="btnContainer">
+      <button class="addButtons" onclick="addWater(250)">Cup 250mL</button>
+      <br>
+      <button class="addButtons" onclick="addWater(350)">Mug 350mL</button>
+      <br>
+      <button class="addButtons" onclick="addWater(1000)">Bottle 1L</button>
+      <br>
+      <button class="addButtons" id="resetButton" onclick="setWater(0)">Reset</button>
+    </div>
   </div>
 </body>
 <script src="index.js"></script>

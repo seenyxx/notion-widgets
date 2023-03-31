@@ -18,7 +18,7 @@
 }
 
 #barContainer {
-  margin: 8px;
+  margin: 0 auto;
   position: relative;
   background: #101010;
   height: 512px;
@@ -32,11 +32,19 @@
   background: #00a2c3;
   height: 70%;
   width: 80px;
-  border-radius: 0 0 var(--radius) var(--radius);
+  border-radius: var(--radius) var(--radius) var(--radius) var(--radius);
   box-sizing: border-box;
+  box-shadow: 0px 0px 20px 3px rgba(0,50,100,0.9);
+}
+
+#bar.animate {
   animation: grow 1s ease-out forwards;
   transform-origin: bottom;
-  box-shadow: 0px 0px 20px 3px rgba(0,50,100,0.9);
+}
+
+#uiContainer {
+  left: 0;
+  right: 0;
 }
 
 @keyframes grow{
@@ -44,8 +52,11 @@
     transform: scaleY(0);
   }
 }
+
 #statsDisplay {
-  position: absolute;
+  position: relative;
+  margin-top: 20px !important;
+  margin: 0 auto;
   left: 0;
   padding: 5px;
   text-align: center;
@@ -105,6 +116,18 @@ p {
 
 #btnContainer {
   text-align: center;
-  margin-top: 110px;
-  width: 96px;
+  width: 0 72;
+  display: relative;
+}
+
+#resetButton {
+  background: #e61919;
+}
+
+#resetButton:hover {
+  background: #ff2626 !important;
+}
+
+#resetButton:active {
+  background: #ff4d4d !important;
 }

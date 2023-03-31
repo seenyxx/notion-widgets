@@ -19,6 +19,8 @@ updateDisplay()
 
 function updateDisplay() {
   document.getElementById('bar').style.height = `${percentage() > 100 ? 100 : percentage()}%`;
+  document.getElementById('bar').classList.remove('animate')
+  document.getElementById('bar').classList.add('animate')
   document.getElementById('capacityDisplay').innerText = `${current()}mL/${total}mL`;
   document.getElementById('percentage').innerText = `${Math.floor(percentage())}%`;
 }
