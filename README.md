@@ -4,7 +4,7 @@ A centered and customisable strip of text.
 **Url:** `/notion-widgets/title-widget/<parameters>`
 
 [Demo here](https://seen-idc.github.io/notion-widgets/title-widget/?text=Hello&font=sc&size=42&dark=1)
-
+[Demo #2 here](https://seen-idc.github.io/notion-widgets/title-widget/?text=Lorem%20ipsum%20dolor%20sit%20amet,%20consectetur%20adipiscing%20elit.%20Ut%20pharetra%20dolor%20lacus.&callout=a&size=16&bold=a&italic=a&dark=a&bg=302228&paddingOverride=18px)
 Parameters:
 - `?text` Text to be displayed
 - `?size` Size of the text in pixels
