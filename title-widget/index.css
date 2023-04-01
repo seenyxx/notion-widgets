@@ -17,3 +17,26 @@ span {
   display: table;
   margin: 0 auto;
 }
+
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+.callout {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  background-color: gray;
+  border-radius: 3px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italics {
+  font-style: italic;
+}

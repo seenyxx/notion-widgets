@@ -17,3 +17,27 @@ titleElement.style.fontSize = params.size ? `${params.size}px` : '72px';
 
 document.body.style.backgroundColor = params.dark ? darkModeBg : lightModeBg;
 titleElement.style.color = params.dark ? 'white' : 'black';
+
+if (params.callout) {
+  titleElement.parentElement.classList.add('callout');
+}
+
+if (params.callout && params.bg) {
+  titleElement.parentElement.style.backgroundColor = `#${params.bg}`;
+}
+
+if (params.callout && params.paddingOverride) {
+  titleElement.parentElement.style.padding = `${params.paddingOverride} 0`;
+}
+
+if (params.callout && params.borderRadiusOverride) {
+  titleElement.parentElement.style.borderRadius = params.borderRadiusOverride;
+}
+
+if (params.italic) {
+  titleElement.parentElement.classList.add('italics');
+}
+
+if (params.bold) {
+  titleElement.parentElement.classList.add('bold');
+}
